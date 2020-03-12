@@ -478,7 +478,7 @@ img {
   max-width: 50%;
 }
 div.main .content {
-    width: 50%;
+    width: 100%;
 }
 div.main .content .markdown {
   font-size: 1.1em;
