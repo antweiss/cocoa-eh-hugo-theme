@@ -475,10 +475,10 @@ a:hover {
   color: #2a6496;
 }
 img {
-  max-width: 100%;
+  max-width: 50%;
 }
 div.main .content {
-    width: 100%;
+    width: 50%;
 }
 div.main .content .markdown {
   font-size: 1.1em;
@@ -629,7 +629,7 @@ div.main .content .markdown figure {
 div.main .content .markdown figure img {
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 50%;
   display: block;
   position: static;
   margin: auto;
