@@ -453,6 +453,7 @@ div.header {
 }
 div.header-home {
   padding-top: 36px;
+  max-width: 80%;
 }
 div.main {
   padding-top: 32px;
