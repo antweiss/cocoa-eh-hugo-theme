@@ -3,15 +3,40 @@ a {
 }
 
 a:hover {
-    color: {{ .Param "colors.identifier_dark" }};
+    color: {{ .Param "colors.visited" }};
 }
 
-div.main .content .markdown, div.header .name, div.header nav ul a:hover {
+body {
+    background-color: {{ .Param "colors.background" }};
+}
+
+div.main .content .markdown h6 {
     color: {{ .Param "colors.foreground" }};
 }
 
+div.main .content .markdown, div.header .name, div.header nav ul {
+    color: {{ .Param "colors.foreground" }};
+    background-color: {{ .Param "colors.background" }};
+
+}
+
+div.header-home .container .content a .name h1 {
+    text-decoration: none;
+}
+div .content {
+    background-color: {{ .Param "colors.background" }};
+}
+
+div.header {
+    background-color: {{ .Param "colors.background" }};
+}
 div.header nav ul a {
     color: {{ .Param "colors.trivial" }};
+    background-color: {{ .Param "colors.background" }};
+    text-decoration: none;
+}
+div.header nav ul a:hover {
+  color: {{ .Param "colors.visited" }};
 }
 
 div.main .content .markdown code {
@@ -19,6 +44,9 @@ div.main .content .markdown code {
     color: {{ .Param "colors.identifier" }};
 }
 
+div.main .content .markdown figure {
+    background: {{ .Param "colors.background" }};
+}
 div.main .content .markdown pre, div.main .content .markdown pre code {
     background-color: {{ .Param "colors.background_dark" }};
     color: {{ .Param "colors.code" }};
@@ -62,4 +90,8 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 .ssk {
     background-color: {{ .Param "colors.trivial" }};
+    color: {{ .Param "colors.visited" }};
+    a:hover {
+        color: {{ .Param "colors.visited" }};
+    }
 }

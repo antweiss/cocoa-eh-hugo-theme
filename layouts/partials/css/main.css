@@ -56,7 +56,7 @@ a,
 a:visited,
 a:focus,
 a:active {
-  text-decoration: none;
+  text-decoration: underline;
 }
 html {
   height: 100%;
@@ -162,7 +162,11 @@ div.header .container .logo {
   {{ else }}
   max-width: 100px;
   {{ end }}
-  margin-left: -2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+div.header .a {
+  text-decoration: none;
 }
 div.header .name {
   padding-top: 20px;
@@ -216,9 +220,7 @@ div.header nav ul a {
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
-div.header nav ul a:hover {
-  color: #111111;
-}
+
 div.footer .container {
   -webkit-align-items: center;
   -moz-align-items: center;
@@ -466,14 +468,14 @@ div.main .container .content .post-item {
     list-style: none;
 }
 a {
-  color: #428bca;
+/*  color: #428bca;*/
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 a:hover {
-  color: #2a6496;
+  color: yellow;
 }
 img {
   max-width: 50%;
@@ -501,7 +503,7 @@ div.main .content .markdown h6 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+/*  color: #333333; */
   text-transform: none;
   margin-top: 1.75rem;
 }
@@ -528,7 +530,7 @@ div.main .content .markdown code,
 div.main .content .markdown pre {
   font-family: 'Menlo', monospace;
   font-size: 0.98rem;
-  background-color: #f7f7f7;
+/*  background-color: #f7f7f7; */
 }
 div.main .content .markdown code {
   /* enclosed by single backtick (`) */
@@ -569,6 +571,7 @@ div.main .content .markdown p {
 div.main .content .markdown ul,
 div.main .content .markdown ol,
 div.main .content .markdown dl {
+  text-align: justify;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -648,7 +651,7 @@ div.main .content .markdown th {
 }
 div.main .content .markdown tbody tr:nth-child(odd) td,
 div.main .content .markdown tbody tr:nth-child(odd) th {
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
 }
 div.main .content .markdown .footnotes ol {
   list-style-type: decimal;
@@ -720,7 +723,7 @@ div.main .content .share, div.main .content .share div {
   justify-content: center;
 }
 div.main .content .share {
-  background-color: rgba(152, 152, 152, 0.07);
+  /* background-color: rgba(152, 152, 152, 0.07); */
   padding: 1em 0;
 }
 div.main .content .share a {
@@ -731,7 +734,7 @@ kbd {
   border: 1px solid #ccc;
   font-size: 11px;
   font-family: Arial,Helvetica,sans-serif;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
   color: #333;
   -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
   -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
