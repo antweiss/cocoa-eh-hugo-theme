@@ -541,8 +541,8 @@ div.main .content .markdown pre {
   /* Hugo specific: consider using the 'highlight' shortcode */
   display: block;
   margin-top: 1rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
+  margin-bottom: 1rem;
+  padding: 0;
   line-height: 1.5em;
   white-space: pre;
   word-break: break-all;

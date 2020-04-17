@@ -48,9 +48,12 @@ div.main .content .markdown figure {
     background: {{ .Param "colors.background" }};
 }
 div.main .content .markdown pre, div.main .content .markdown pre code {
-    background-color: {{ .Param "colors.background_dark" }};
+   /* background-color: {{ .Param "colors.background_dark" }};*/
+   background-color: rgb(249, 252, 254);
     color: {{ .Param "colors.code" }};
 }
+
+
 
 .hljs, .hljs-subst, .hljs-variable {
     color: {{ .Param "colors.code" }};
